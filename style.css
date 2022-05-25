@@ -1,0 +1,258 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;400;700&display=swap');
+
+html, body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: 'Lato', sans-serif;
+    overflow: hidden;
+}
+.container {
+    display: flex;
+    justify-content: center;
+    background: rgb(37,45,55);
+    background: linear-gradient(0deg, rgba(37,45,55,1) 0%, rgba(50,65,74,1) 100%);
+    width: 100vw;
+    height: 100vh;
+}
+.card-one {
+    width: 100vw;
+    height: 100vh;
+
+    /* center stuff */
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+
+    /* background styling */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: url(./assets/smile_a.jpg);
+    animation: fadein 2s;
+}
+.inner {
+    display: flex;
+    flex-direction: column;
+    padding: 5vw;
+}
+.inner p {
+    padding: 0;
+    margin: 0;
+    color: rgb(90, 92, 97);
+}
+.inner h1 {
+    padding: 0;
+    margin: 0;
+    color: white;
+}
+.skip {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 5vw;
+    position:relative;
+    animation:glide 0.5s ease-in-out alternate infinite;
+}
+.skip button { 
+    border: none;
+    border-style: none;
+    background-color: transparent;
+    color: white;
+    font-size: 13px;
+    letter-spacing: 2px;
+    cursor: pointer;
+}
+.skip button:hover {
+    color: rgb(0, 0, 0);
+}
+.card-two {
+    width: 100vw;
+    height: 100vh;
+    margin: 5vw;
+    animation: 0.5s ease-out 0s 1 slider;
+}
+#two {
+    display: none;
+}
+.top {
+    display: flex;
+    flex-direction: column;
+}
+.top h2 {
+    color: white;
+    font-weight: 700;
+}
+.top span {
+    font-weight: 400;
+}
+.back button {
+    border: none;
+    border-style: none;
+    background-color: transparent;
+    color: rgb(108, 137, 149);
+    font-size: 13px;
+    letter-spacing: 2px;
+    cursor: pointer;
+}
+.sex {
+    display: flex;
+    justify-content: space-between;
+}
+
+.male {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 40vw;
+    height: 22vh;
+    background-color: #405463;
+    border-radius: 15px;
+    color: rgb(108, 137, 149);
+    font-size: 25px;
+}
+.male:hover {
+    background-color: #688597;
+    color: white;
+}
+.female {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 40vw;
+    height: 22vh;
+    background-color: rgb(64, 84, 99);
+    border-radius: 15px;
+    color: rgb(108, 137, 149);
+    font-size: 25px;
+}
+.female:hover {
+    background-color: rgb(105, 133, 150);
+    color: white;
+}
+.height {
+    display: flex;
+    justify-content: space-between;
+    margin: 2vh;
+}
+.height label {
+    color: white;
+    width: 30vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.weight {
+    display: flex;
+    justify-content: space-between;
+    margin: 2vh;
+}
+.weight label {
+    color: white;
+    width: 30vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.goal {
+    display: flex;
+    justify-content: space-between;
+    margin: 2vh;
+}
+.goal label {
+    color: white;
+    width: 30vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.age {
+    display: flex;
+    justify-content: space-between;
+    margin: 2vh;
+}
+.age label {
+    color: white;
+    width: 30vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+input {
+    display: flex;
+    text-align: center;
+    background-color: rgb(64, 84, 99);
+    border-radius: 25px;
+    border: none;
+    color: white;
+    font-size: 28px;
+    font-weight: 700;
+    width: 25vw;
+    padding: 2vh;
+}
+input::placeholder {
+    color: rgb(108, 137, 149);
+    font-weight: 400;
+}
+.submit {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 2vh;
+}
+#submit {
+    display: flex;
+    justify-content: center;
+    font-size: 15px;
+    background: rgb(101,114,228);
+    background: linear-gradient(144deg, rgba(101,114,228,1) 0%, rgba(0,212,255,1) 100%); 
+    transition: transform 250ms;
+    cursor:pointer;
+    width: 50vw;
+}
+#submit:hover {
+    background: rgb(101,114,228);
+    background: linear-gradient(0deg, rgba(101,114,228,1) 0%, rgba(0,212,255,1) 100%); 
+    transform: translateY(-5px);
+}
+#three {
+    display: none;
+}
+.card-three {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+}
+#result {
+    color: white;
+}
+@keyframes glide  {
+    from {
+       left:0px;
+       top:0px;
+    }
+    to {
+       left:0px;
+       top:5px;
+    }
+ }
+ @keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+ @keyframes slider {
+    0% {
+      transform: translateX(-100%);
+      opacity: 0;
+    }
+    100% {
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }

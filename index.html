@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <script src="https://kit.fontawesome.com/e23e1e2cd6.js" crossorigin="anonymous"></script>
+    <script src="./app.js"></script>
+    <title>BMI Project</title>
+</head>
+<body>
+    <main>
+        <div class="container">
+            <div class="card-one" id="one">
+                <div class="inner">
+                    <p>Ideal for the health consciours</p>
+                    <h1>Keep your body </br>at glance.</h1>
+                </div>
+                <div class="skip">
+                    <button onclick="next()">Next <i class="fa-solid fa-angle-right"></i></button>
+                </div>
+            </div>
+            
+            <div class="card-two" id="two">
+                <div class="top">
+                    <div class="back">
+                        <button onclick="back()"><i class="fa-solid fa-angle-left"></i> Main Screen</button>
+                    </div>
+                    <h2>BMI <span>Calculator</span></h2>
+                    <div class="sex">
+                        <div class="male"><i class="fa-solid fa-mars"></i>Male</div>
+                        <div class="female"><i class="fa-solid fa-venus"></i>Female</div>
+                    </div>
+                    <div class="height">
+                        <label for="cm">cm</label>
+                        <input type="number" id="cm" name="cm" min="120" max="300" placeholder="000">
+                    </div>
+                    <div class="weight">
+                        <label for="kg">kg</label>
+                        <input type="number" id="kg" name="kg" min="40" max="300" placeholder="000">
+                    </div>
+                    <div class="goal">
+                        <label for="gl">goal</label>
+                        <input type="number" id="gl" name="gl" min="40" max="300" placeholder="000">
+                    </div>
+                    <div class="age">
+                        <label for="ag">age</label>
+                        <input type="number" id="ag" name="ag" min="1" max="125" placeholder="00">
+                    </div>
+                    <div class="submit">
+                        <input type="submit" id="submit" value="Calculate your BMI">
+                    </div>
+                </div>
+            </div>
+            <div class="card-three" id="three">
+                <div id="result"></div>
+            </div>
+        </div>
+    </main>
+</body>
+</html>
