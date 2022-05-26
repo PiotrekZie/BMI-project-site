@@ -16,9 +16,7 @@
 
 ### Screenshot
 
-![Desktop Ver.](./screenshot.jpeg)
-
-![Mobile(375px) Ver.](./screenshot1.jpeg)
+![BMI Main Screen](./screenshot.jpeg) ![BMI Calc](./screenshot1.jpeg)
 
 ## My process
 
@@ -34,7 +32,34 @@
 This project was one of the most difficult I have ever experienced. Mainly because of Javascript (this was my first Javascript project), I still have to learn a lot about Javascript, but I’ll make it :) I’m glad I managed to master HTML and CSS so well that I focused most attention on JS instead of getting annoyed with the whole project.
 
 ```css
-Wpisać tu kodzik
+// If both input is valid, calculate the bmi
+    else {
+        // Hide Card One
+        var main=document.getElementById('one');
+        main.style.display='none';
+
+        //Hide Card Two
+        var calculator=document.getElementById('two');
+        calculator.style.display='none';
+
+        // Display Card Three
+        var calculator=document.getElementById('three');
+        calculator.style.display='flex';
+
+        // Fixing upto 1 decimal places
+        let bmi = (weight / ((height * height) / 10000)).toFixed(1);
+  
+        // Dividing as per the bmi conditions
+        if (bmi < 18.6) result.innerHTML =
+            `Your BMI</br> Under Weight : <span>${bmi}</span>`;
+  
+        else if (bmi >= 18.6 && bmi < 24.9) 
+            result.innerHTML = 
+            `Your BMI</br> Normal : <span>${bmi}</span>`;
+  
+        else result.innerHTML =
+            `Your BMI</br> Over Weight : <span>${bmi}</span>`;
+    }
 ```
 
 ### Continued development
