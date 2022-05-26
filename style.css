@@ -73,9 +73,9 @@ html, body {
     margin: 5vw;
     animation: 0.5s ease-out 0s 1 slider;
 }
-/* #two {
+#two {
     display: none;
-} */
+}
 .top {
     display: flex;
     flex-direction: column;
