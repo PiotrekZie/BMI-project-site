@@ -1,4 +1,4 @@
-# BMI Project Site
+# [BMI Project Site](https://piotrekzie.github.io/BMI-project-site/)
 
 ## Table of contents
 
