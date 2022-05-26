@@ -50,7 +50,7 @@ function calculatorBMI() {
     else if (goal === "" || isNaN(goal) || goal < 40) 
         alert("Provide a valid Goal!");
 
-    else if (age === "" || isNaN(age) || age < 1) 
+    else if (age === "" || isNaN(age) || age < 2) 
         alert("Provide a valid Age!");
   
     // If both input is valid, calculate the bmi

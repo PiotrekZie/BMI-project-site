@@ -73,9 +73,9 @@ html, body {
     margin: 5vw;
     animation: 0.5s ease-out 0s 1 slider;
 }
-#two {
+/* #two {
     display: none;
-}
+} */
 .top {
     display: flex;
     flex-direction: column;
@@ -96,12 +96,12 @@ html, body {
     letter-spacing: 2px;
     cursor: pointer;
 }
-.sex {
+.gender {
     display: flex;
     justify-content: space-between;
 }
 
-.male {
+#male {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -112,12 +112,17 @@ html, body {
     border-radius: 15px;
     color: rgb(108, 137, 149);
     font-size: 25px;
+    cursor: pointer;
 }
-.male:hover {
+#male:hover{
     background-color: #688597;
     color: white;
 }
-.female {
+#male:active {
+    background-color: red;
+    color: white;
+}
+#female {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -128,8 +133,9 @@ html, body {
     border-radius: 15px;
     color: rgb(108, 137, 149);
     font-size: 25px;
+    cursor: pointer;
 }
-.female:hover {
+#female:hover {
     background-color: rgb(105, 133, 150);
     color: white;
 }
@@ -181,7 +187,7 @@ html, body {
     justify-content: center;
     align-items: center;
 }
-input {
+.stats input {
     display: flex;
     text-align: center;
     background-color: rgb(64, 84, 99);
@@ -193,7 +199,7 @@ input {
     width: 25vw;
     padding: 2vh;
 }
-input::placeholder {
+.stats input::placeholder {
     color: rgb(108, 137, 149);
     font-weight: 400;
 }
@@ -203,17 +209,23 @@ input::placeholder {
     align-items: center;
     margin: 2vh;
 }
-#submit {
+.submit input {
     display: flex;
     justify-content: center;
-    font-size: 15px;
+    text-align: center;
     background: rgb(101,114,228);
     background: linear-gradient(144deg, rgba(101,114,228,1) 0%, rgba(0,212,255,1) 100%); 
-    transition: transform 250ms;
-    cursor:pointer;
+    border-radius: 25px;
+    border: none;
+    color: white;
+    font-size: 15px;
+    font-weight: 700;
     width: 50vw;
+    padding: 2vh;
+    transition: transform 250ms;
+    cursor: pointer;
 }
-#submit:hover {
+.submit input:hover {
     background: rgb(101,114,228);
     background: linear-gradient(0deg, rgba(101,114,228,1) 0%, rgba(0,212,255,1) 100%); 
     transform: translateY(-5px);
