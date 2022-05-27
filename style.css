@@ -73,9 +73,9 @@ html, body {
     margin: 5vw;
     animation: 0.5s ease-out 0s 1 slider;
 }
-/* #two {
+#two {
     display: none;
-} */
+}
 .top {
     display: flex;
     flex-direction: column;
@@ -100,43 +100,22 @@ html, body {
     display: flex;
     justify-content: space-between;
 }
-
-#male {
-    display: flex;
-    justify-content: center;
+.btn {
     align-items: center;
-    flex-direction: column;
-    width: 40vw;
-    height: 22vh;
     background-color: #405463;
     border-radius: 15px;
+    border: none;
     color: rgb(108, 137, 149);
-    font-size: 25px;
     cursor: pointer;
-}
-#male:hover{
-    background-color: #688597;
-    color: white;
-}
-#male:active {
-    background-color: red;
-    color: white;
-}
-#female {
     display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    width: 40vw;
-    height: 22vh;
-    background-color: rgb(64, 84, 99);
-    border-radius: 15px;
-    color: rgb(108, 137, 149);
     font-size: 25px;
-    cursor: pointer;
+    flex-direction: column;
+    justify-content: center;
+    height: 22vh;
+    width: 40vw;
 }
-#female:hover {
-    background-color: rgb(105, 133, 150);
+.active, .btn:hover{
+    background-color: #688597;
     color: white;
 }
 .height {

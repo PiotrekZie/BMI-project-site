@@ -12,7 +12,7 @@
 <body>
     <main>
         <div class="container">
-            <!-- <div class="card-one" id="one">
+            <div class="card-one" id="one">
                 <div class="inner">
                     <p>Ideal for the health consciours</p>
                     <h1>Keep your body </br>at glance.</h1>
@@ -20,17 +20,17 @@
                 <div class="skip">
                     <button onclick="next()">Next <i class="fa-solid fa-angle-right"></i></button>
                 </div>
-            </div> -->
+            </div>
             
             <div class="card-two" id="two">
                 <div class="top">
                     <div class="back">
-                        <button onclick="back()" ><i class="fa-solid fa-angle-left"></i> Main Screen</button>
+                        <button onclick="back()"><i class="fa-solid fa-angle-left"></i> Main Screen</button>
                     </div>
                     <h2>BMI <span>Calculator</span></h2>
-                    <div class="gender">
-                        <div class="btn" id="male"><i class="fa-solid fa-mars"></i>Male</div>
-                        <div class="btn" id="female"><i class="fa-solid fa-venus"></i>Female</div>
+                    <div class="gender" id="gender">
+                        <button class="btn" onclick="sel()"><i class="fa-solid fa-mars"></i>Male</button>
+                        <button class="btn" onclick="sel()"><i class="fa-solid fa-venus"></i>Female</button>
                     </div>
                     <div class="stats">
                         <div class="height">
