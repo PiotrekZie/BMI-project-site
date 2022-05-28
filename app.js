@@ -102,14 +102,19 @@ function calculatorBMI() {
   
         // Dividing as per the bmi conditions
         if (bmi < 18.6) result.innerHTML =
-            `Your Current BMI</br> Under Weight : <span>${bmi}</span>`;
+            `<p>Your Current BMI</br></p>
+            <span>${bmi}</span></br>
+            <h1>Under Weight</h1>`;
   
-        else if (bmi >= 18.6 && bmi < 24.9) 
-            result.innerHTML = 
-            `Your Current BMI</br> Normal : <span>${bmi}</span>`;
+        else if (bmi >= 18.6 && bmi < 24.9) result.innerHTML = 
+            `<p>Your Current BMI</br></p>
+            <span>${bmi}</span></br>
+            <h1>Normal</h1>`;
   
         else result.innerHTML =
-            `Your Current BMI</br> Over Weight : <span>${bmi}</span>`;
+            `<p>Your Current BMI</br></p>
+            <span>${bmi}</span></br>
+            <h1>Over Weight</h1>`;
     }
 }
 

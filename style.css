@@ -186,7 +186,7 @@ html, body {
     justify-content: center;
     text-align: center;
     background: rgb(101,114,228);
-    background: linear-gradient(144deg, rgba(101,114,228,1) 0%, rgba(0,212,255,1) 100%); 
+    background: linear-gradient(-90deg, rgba(101,114,228,1) 0%, rgba(0,212,255,1) 100%);
     border-radius: 25px;
     border: none;
     color: white;
@@ -199,8 +199,8 @@ html, body {
 }
 .submit input:hover {
     background: rgb(101,114,228);
-    background: linear-gradient(0deg, rgba(101,114,228,1) 0%, rgba(0,212,255,1) 100%); 
-    transform: translateY(-5px);
+    background: linear-gradient(90deg, rgba(101,114,228,1) 0%, rgba(0,212,255,1) 100%);
+    animation: fadein__button 2s;
 }
 #three {
     display: none;
@@ -209,10 +209,35 @@ html, body {
     width: 100vw;
     height: 100vh;
     margin: 5vw;
-    animation: 0.5s ease-out 0s 1 slider;
+    animation: fadein 2s;
+    justify-content: center;
+    align-items: center;
 }
 #result {
     color: white;
+}
+.center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    padding: 2vh;
+    background: rgb(101,114,228);
+    background: linear-gradient(144deg, rgb(64, 84, 99) 0%, rgb(125, 127, 129) 100%); 
+    border-radius: 25px;
+    box-shadow: 0 8px 8px -4px rgb(64, 84, 99);
+    cursor: pointer;
+}
+.center h2 {
+    color: white;
+    font-weight: 700;
+}
+#result span {
+    font-size: 72px;
+    background: -webkit-linear-gradient(0deg, rgba(101,114,228,1) 0%, rgba(0,212,255,1) 100%); 
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 @keyframes glide  {
     from {
@@ -226,6 +251,10 @@ html, body {
  }
 @keyframes fadein {
     from { opacity: 0; }
+    to   { opacity: 1; }
+}
+@keyframes fadein__button {
+    from { opacity: 0.5; }
     to   { opacity: 1; }
 }
 @keyframes slider {
