@@ -16,7 +16,7 @@
 
 ### Screenshot
 
-![BMI Main Screen](./screenshot.jpeg) ![BMI Calc](./screenshot1.jpeg)
+![BMI Main Screen](./screenshot.jpeg) ![BMI Calc](./screenshot1.jpeg) ![Result](./screenshot2.jpeg)
 
 ## My process
 
