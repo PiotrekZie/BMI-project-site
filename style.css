@@ -85,7 +85,7 @@ html, body {
     font-weight: 700;
 }
 .top span {
-    font-weight: 400;
+    font-weight: 100;
 }
 .back button {
     border: none;
@@ -98,7 +98,7 @@ html, body {
 }
 .gender {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
 }
 .btn {
     align-items: center;
@@ -114,13 +114,18 @@ html, body {
     height: 22vh;
     width: 40vw;
 }
+.btn:hover {
+    transition: transform 250ms;
+    transform: translateY(-5px);
+}
 .active, .btn:hover{
-    background-color: #688597;
+    background: rgb(101,114,228);
+    background: linear-gradient(0deg, rgba(101,114,228,1) 0%, rgba(0,212,255,1) 100%); 
     color: white;
 }
 .height {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     margin: 2vh;
 }
 .height label {
@@ -132,7 +137,7 @@ html, body {
 }
 .weight {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     margin: 2vh;
 }
 .weight label {
@@ -142,21 +147,9 @@ html, body {
     justify-content: center;
     align-items: center;
 }
-.goal {
-    display: flex;
-    justify-content: space-between;
-    margin: 2vh;
-}
-.goal label {
-    color: white;
-    width: 30vw;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
 .age {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     margin: 2vh;
 }
 .age label {
@@ -175,7 +168,7 @@ html, body {
     color: white;
     font-size: 28px;
     font-weight: 700;
-    width: 25vw;
+    width: 15vw;
     padding: 2vh;
 }
 .stats input::placeholder {
@@ -213,12 +206,10 @@ html, body {
     display: none;
 }
 .card-three {
-    width: 100%;
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    align-content: center;
-    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    margin: 5vw;
+    animation: 0.5s ease-out 0s 1 slider;
 }
 #result {
     color: white;
@@ -233,11 +224,11 @@ html, body {
        top:5px;
     }
  }
- @keyframes fadein {
+@keyframes fadein {
     from { opacity: 0; }
     to   { opacity: 1; }
 }
- @keyframes slider {
+@keyframes slider {
     0% {
       transform: translateX(-100%);
       opacity: 0;

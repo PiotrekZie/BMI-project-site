@@ -45,10 +45,10 @@ function back__calc() {
     main.style.display='none';
     
     var calculator=document.getElementById('two');
-    calculator.style.display='none';
+    calculator.style.display='block';
 
     var calculator=document.getElementById('three');
-    calculator.style.display='flex';
+    calculator.style.display='none';
     }
 
 window.onload = () => {
@@ -67,9 +67,6 @@ function calculatorBMI() {
     // Getting input from user into weight variable. 
     let weight = parseInt(document.querySelector("#kg").value);
 
-    // Getting input from user into goal variable. 
-    let goal = parseInt(document.querySelector("#gl").value);
-
     // Getting input from user into age variable. 
     let age = parseInt(document.querySelector("#ag").value);
 
@@ -82,9 +79,6 @@ function calculatorBMI() {
         
     else if (weight === "" || isNaN(weight) || weight < 40 && weight > 300) 
     alert ("Provide a valid Weight!") ;
-
-    else if (goal === "" || isNaN(goal) || goal < 40 && goal > 300) 
-        alert("Provide a valid Goal!");
 
     else if (age === "" || isNaN(age) || age < 2 && age > 120) 
         alert("Provide a valid Age!");
@@ -108,14 +102,14 @@ function calculatorBMI() {
   
         // Dividing as per the bmi conditions
         if (bmi < 18.6) result.innerHTML =
-            `Your BMI</br> Under Weight : <span>${bmi}</span>`;
+            `Your Current BMI</br> Under Weight : <span>${bmi}</span>`;
   
         else if (bmi >= 18.6 && bmi < 24.9) 
             result.innerHTML = 
-            `Your BMI</br> Normal : <span>${bmi}</span>`;
+            `Your Current BMI</br> Normal : <span>${bmi}</span>`;
   
         else result.innerHTML =
-            `Your BMI</br> Over Weight : <span>${bmi}</span>`;
+            `Your Current BMI</br> Over Weight : <span>${bmi}</span>`;
     }
 }
 
