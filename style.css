@@ -208,7 +208,6 @@ html, body {
 .card-three {
     width: 100vw;
     height: 100vh;
-    margin: 5vw;
     animation: fadein 2s;
     justify-content: center;
     align-items: center;
@@ -223,6 +222,7 @@ html, body {
     flex-direction: column;
     text-align: center;
     padding: 2vh;
+    margin: 5vw;
     background: rgb(101,114,228);
     background: linear-gradient(144deg, rgb(64, 84, 99) 0%, rgb(125, 127, 129) 100%); 
     border-radius: 25px;
@@ -238,6 +238,9 @@ html, body {
     background: -webkit-linear-gradient(0deg, rgba(101,114,228,1) 0%, rgba(0,212,255,1) 100%); 
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+}
+#result strong {
+    color: rgba(0,212,255,1);
 }
 @keyframes glide  {
     from {
