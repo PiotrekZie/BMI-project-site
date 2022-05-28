@@ -34,19 +34,15 @@
                     </div>
                     <div class="stats">
                         <div class="height">
-                            <label for="cm">cm</label>
+                            <label for="cm">What's your Height?</label>
                             <input type="number" id="cm" name="cm" min="120" max="300" placeholder="000">
                         </div>
                         <div class="weight">
-                            <label for="kg">kg</label>
+                            <label for="kg">What's your Weight?</label>
                             <input type="number" id="kg" name="kg" min="40" max="300" placeholder="000">
                         </div>
-                        <div class="goal">
-                            <label for="gl">goal</label>
-                            <input type="number" id="gl" name="gl" min="40" max="300" placeholder="000">
-                        </div>
                         <div class="age">
-                            <label for="ag">age</label>
+                            <label for="ag">What's your age?</label>
                             <input type="number" id="ag" name="ag" min="2" max="120" placeholder="00">
                         </div>
                     </div>
@@ -56,7 +52,10 @@
                 </div>
             </div>
             <div class="card-three" id="three">
-                <div id="result"></div>
+                <div class="center" onclick="back__calc()">
+                    <h2>Your <span>Results</span></h2>
+                    <div id="result"></div>
+                </div>                
             </div>
         </div>
     </main>
