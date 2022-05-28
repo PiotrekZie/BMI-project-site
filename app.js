@@ -39,12 +39,25 @@ function back() {
     calculator.style.display='none';
     }
 
+function back__calc() {
+
+    var main=document.getElementById('one');
+    main.style.display='none';
+    
+    var calculator=document.getElementById('two');
+    calculator.style.display='none';
+
+    var calculator=document.getElementById('three');
+    calculator.style.display='flex';
+    }
+
 window.onload = () => {
     let button = document.querySelector("#submit")
 
     // Function for BMI Calculator
     button.addEventListener("click", calculatorBMI)
 };
+
 
 function calculatorBMI() {
 
@@ -64,16 +77,16 @@ function calculatorBMI() {
   
     // Checking the user providing a proper
     // value or not
-    if (height === "" || isNaN(height) || height < 120) 
+    if (height === "" || isNaN(height) || height < 120 && height > 300) 
     alert ("Provide a valid Height!") ;
         
-    else if (weight === "" || isNaN(weight) || weight < 40) 
+    else if (weight === "" || isNaN(weight) || weight < 40 && weight > 300) 
     alert ("Provide a valid Weight!") ;
 
-    else if (goal === "" || isNaN(goal) || goal < 40) 
+    else if (goal === "" || isNaN(goal) || goal < 40 && goal > 300) 
         alert("Provide a valid Goal!");
 
-    else if (age === "" || isNaN(age) || age < 2) 
+    else if (age === "" || isNaN(age) || age < 2 && age > 120) 
         alert("Provide a valid Age!");
   
     // If both input is valid, calculate the bmi
