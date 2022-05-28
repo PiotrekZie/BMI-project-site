@@ -227,7 +227,7 @@ html, body {
     background: linear-gradient(144deg, rgb(64, 84, 99) 0%, rgb(125, 127, 129) 100%); 
     border-radius: 25px;
     box-shadow: 0 8px 8px -4px rgb(64, 84, 99);
-    cursor: pointer;
+    
 }
 .center h2 {
     color: white;
@@ -242,6 +242,18 @@ html, body {
 #result strong {
     color: rgba(0,212,255,1);
 }
+.recalculate {
+    background: rgb(101,114,228);
+    background: linear-gradient(-90deg, rgb(224, 185, 141) 0%, rgb(192, 107, 9) 100%);
+    border-radius: 25px;
+    cursor: pointer;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    padding: 2vh;
+    text-align: center;
+}
+
 @keyframes glide  {
     from {
        left:0px;
